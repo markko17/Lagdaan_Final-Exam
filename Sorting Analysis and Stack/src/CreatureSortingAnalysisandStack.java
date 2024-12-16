@@ -14,7 +14,7 @@ public class CreatureSortingAnalysisandStack {
 
         @Override
         public String toString() {
-            return creature + " - Power Level: " + powerLevel;
+            return creature + " - " + powerLevel;
         }
     }
 
@@ -69,7 +69,7 @@ public class CreatureSortingAnalysisandStack {
     public static void main(String[] args) {
         // Input data
         Creature[] creatures = {
-            new Creature( "Dragon", 95),
+            new Creature("Dragon ", 95),
             new Creature("Griffin", 88),
             new Creature("Unicorn", 78),
             new Creature("Phoenix", 92),
@@ -93,6 +93,6 @@ public class CreatureSortingAnalysisandStack {
         }
 
         // Stack Implementation using Bubble Sort result
-        useStack(bubbleSortedCreatures);
+        useStack(selectionSortedCreatures);
     }
 }
